@@ -1,4 +1,6 @@
 .global-wrapper {
-  max-width: 1150px;
-  margin: 0 auto;
+  &--index {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

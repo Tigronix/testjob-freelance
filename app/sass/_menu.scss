@@ -1,0 +1,19 @@
+.menu {
+  &__ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 72px;
+    margin: 0 -20px;
+  }
+
+  &__li {
+    margin: 0 20px;
+  }
+
+  &__link {
+    font-size: 15px;
+    color: #333;
+    text-decoration: none;
+  }
+}
