@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-bottom: 32px;
 
   &__info {
     width: 87.61904761904762%;
@@ -16,7 +17,7 @@
   &__left {
     flex: 1;
     background: #d62323;
-    padding-left: 16.49580615097856%;
+    padding-left: 177px;
     display: flex;
     align-items: center;
   }
