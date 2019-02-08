@@ -6,9 +6,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    align-items: center;
     margin-bottom: 25px;
     padding-right: 32px;
+  }
+
+  &__profile-content {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &:hover {
+      .aside {
+        &__username, &__user-icon  {
+          color: #d62323;
+        }
+      }
+    }
   }
 
   &__content {
@@ -31,11 +45,13 @@
     font-size: 13px;
     color: #575757;
     margin-right: 8px;
+    transition: color .2s;
   }
 
   &__username {
     font-size: 15px;
     color: #333;
+    transition: color .2s;
   }
 
   &__header {

@@ -101,6 +101,15 @@
         z-index: 60;
         transition: background .2s, width .2s;
     }
+
+    &:hover {
+      color: #d62323;
+      .catalog {
+        &__count-number {
+          opacity: 1;
+        }
+      }
+    }
   }
 
   &__name {

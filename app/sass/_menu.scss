@@ -15,5 +15,10 @@
     font-size: 15px;
     color: #333;
     text-decoration: none;
+    transition: 0.2s;
+
+    &:hover {
+      color: #d62323;
+    }
   }
 }
