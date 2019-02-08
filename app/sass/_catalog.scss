@@ -1,22 +1,26 @@
 .catalog {
-  padding-left: 177px;
   display: flex;
   margin: 0 -22px;
   border-bottom: 1px solid #e8eaed;
-  position: relative;
-
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 150px;
-    background: linear-gradient(270.17deg, #FFFFFF 9.25%, rgba(255, 255, 255, 0) 188.53%);;
-  }
+  margin-bottom: 60px;
 
   &__wrapper {
+    position: relative;
+    padding-left: 177px;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 55px;
+      width: 150px;
+      background: linear-gradient(270.17deg, #FFFFFF 9.25%, rgba(255, 255, 255, 0) 188.53%);
+    }
+  }
+
+  &__content {
     overflow: auto;
   }
 
@@ -25,6 +29,26 @@
     padding-bottom: 34px;
     position: relative;
     cursor: pointer;
+
+    &:last-child, &:nth-last-child(2) {
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 55px;
+        width: 100%;
+        background: #fff;
+        z-index: 20;
+      }
+
+      & > * {
+        z-index: 30;
+        position: relative;
+      }
+    }
 
     &:after {
         display: block;
@@ -35,7 +59,7 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 0;
+        bottom: -1px;
     }
 
     &.active {
