@@ -26,7 +26,16 @@ button {
 }
 
 .h2 {
+	font-size: 32px;
+	line-height: 36px;
+	color: #333;
+	font-weight: bold;
 
+	&__count-number {
+		font-size: 18px;
+		line-height: 20px;
+		opacity: 0.2;
+	}
 }
 
 p {
