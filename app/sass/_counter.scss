@@ -1,0 +1,58 @@
+.counter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__minus, &__plus {
+    width: 10px;
+    height: 10px;
+    position: relative;
+  }
+
+  &__minus {
+    &:before {
+      display: block;
+      content: '';
+      width: 10px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #333;
+      height: 2px;
+    }
+  }
+
+  &__plus {
+    &:before {
+      display: block;
+      content: '';
+      width: 10px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #F22C2C;
+      height: 2px;
+    }
+
+    &:after {
+      display: block;
+      content: '';
+      height: 10px;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      background: #F22C2C;
+      width: 2px;
+    }
+  }
+
+  &__number {
+    font-size: 12px;
+    font-weight: bold;
+    color: #d62323;
+    margin: 0 13px;
+  }
+}

@@ -1,3 +1,8 @@
 .wrapper {
   padding-left: 177px;
+  padding-right: 57px;
+
+  &--no-pdr {
+    padding-right: 0;
+  }
 }
